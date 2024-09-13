@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximumscale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Завдання 3</title>
+</head>
+<body>
+<header>
+    <h1 align="center"><a href="index.html">На головну</a></h1>
+</header>
+<main>
+    <h2 align="center">Опитування студентів</h2>
+    <form action method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>INFO</legend>
+            <div>
+                <label for="fullname">Введіть ПІБ</label>
+                <input type="text" id="fullname" value="AAA AAA AAA" placeholder="Введіть ПІБ" tabindex="1" required checked>
+            </div>
+            <p></p>
+            <label for="email">Введіть ваш email</label>
+            <input type="email" name="email" id="email" value="test@gmail.com" placeholder="Введіть ваш email" autocomplete="OFF" tabindex="2" pattern=":[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required title="Email має містити, як мінімум @ та .">
+            <p></p>
+            <label for="password">Введіть ваш пароль</label>
+            <input type="password" name="password" id="password" value="1Pespatron" placeholder="Введіть ваш пароль" tabindex="3" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{6,}$" required title="Пароль мусить складатися з 6 символів,як мінімум одну велику літеру,одну маленьку літері та одну цифру">
+            <p></p>
+            <label for="telnumber">Введіть ваш номер телефону</label>
+            <input type="telnumber" name="telnumber" id="telnumber" value="+380987654" placeholder="Введіть ваш номер телефону" tabindex="4" pattern="+380[0-9]{9}">
+            <p></p>
+            <label for="user_total_info">Коротко опишіть себе:</label>
+            <p></p>
+            <textarea name="user_total_info" id="user_total_info" value="Розумний та талановитий" placeholder="Коротко про себе" tabindex="5"></textarea>
+            <p></p>
+            <label for="date">Введіть дату вашого народження:</label>
+            <input type="date" name="date" id="date" value="2024-09-13" tabindex="6" required title="Введіть дату вашого народження">
+            <p></p>
+            <div>
+                <label for="osvita">Яка у вас освіта</label>
+                <input type="radio" id="osvita" value="ninegrade" tabindex="7">Базова середня освіта
+                <input type="radio" id="osvita" value="elevengrade" checked tabindex="8">Повна середня освіта
+                <input type="radio" id="osvita" value="university" tabindex="9">Вища освіта
+            </div>
+            <p></p>
+            <div>
+                <label for="osvita2">Плануєте здобувати 2/1 освіту</label>
+                <input type="radio" id="osvita2" value="tak" checked tabindex="10">Так
+                <input type="radio" id="osvita2" value="ni" tabindex="11">Ні
+                <input type="radio" id="osvita2" value="other" tabindex="12">Інше
+            </div>
+            <p></p>
+            <div>
+                <label for="speciality">Яку спеціальність закінчили/навчаєтесь</label>
+                <input type="checkbox" id="speciality" value="tech" tabindex="13"> Технічна
+                <input type="checkbox" id="speciality" value="hum" tabindex="14"> Гуманітарна
+                <input type="checkbox" id="speciality" value="nature" tabindex="15"> Природничних наук
+                <input type="checkbox" id="speciality" value="other" tabindex="16"> Інше
+            </div>
+            <p></p>
+            <div>
+            <label for="hobby">Чим займаєтесь у вільний час</label>
+            <br>
+            <select multiple name="hobby" id="hobby" tabindex="21">
+                <option value="hobby">Хоббі</option>
+                <option value="inhouse">Сиджу дома</option>
+                <option value="outside">Гуляю</option>
+                <option value="gaming">Граю в комп</option>
+                <option value="fixing">Щось ремонтую</option>
+                <option value="other">Інше</option>
+            </select>
+            </div>
+            <p></p>
+            <div>
+                <label for="location">Де ви проживаєте</label>
+                <select name="location" id="location" tabindex="17">
+                    <option value="city">Місто</option>
+                    <option value="village">Село</option>
+                    <option value="village-town">Село-міського типу</option>
+                    <option value="other">Інше</option>
+                </select>
+            </div>
+            <p></p>
+            <div>
+                <label for="food">Як ви їсте</label>
+                <select name="food" id="food" tabindex="18">
+                <outgroup label="Сам готую">
+                    <option value="fab">Не фабрікати</option>
+                    <option value="semifab">Напів-фабрікати</option>
+                    <option value="all">Все</option>
+                </outgroup>
+                <outgroup label="Фастфуд">
+                    <option value="kfc">KFC</option>
+                    <option value="mcdonalds">MCdonalds</option>
+                    <option value="ozzy">Ozzy</option>
+                </outgroup>
+                <outgroup label="Купляю їжу">
+                    <option value="dostawa">Доставка</option>
+                    <option value="kafe">Кафе</option>
+                    <option value="restourant">Ресторани</option>
+                </outgroup>
+                <outgroup label="Інше">
+                    <option value="stealMCDRIVE">Ворую на МАК-Драйф</option>
+                    <option value="stealFRIENDS">Краду їжу колег</option>
+                    <option value="hunt">Виходжу на охоту за їжею</option>
+                    <option value="other">Інше</option>
+                </outgroup>
+                </select>
+            </div>
+            <p></p>
+            <div>
+                <label for="region">Оберіть з якого ви регіону</label>
+                <input type="text" list="regions" name="region" id="region" tabindex="19" placeholder="Оберіть варіант">
+                <datalist id="regions">
+                    <option value="West">Захід</option>
+                    <option value="North">Північ</option>
+                    <option value="East">Схід</option>
+                    <option value="South">Південь</option>
+                    <option value="Center">Центр</option>
+                </datalist>
+            </div>
+            <label for="audioFile">Вставте музику</label>
+            <input type="file" name="audioFile" id="audioFile" tabindex="20" accept="audio/*" multiple>
+            </div>
+
+        </fieldset>
+        <button type="submit" tabindex="21">Прийняти</button>
+        <button type="reset" tabindex="22">Скинути</button>
+    </form>
+</main>
+<footer></footer>
+</body>
+</html>
