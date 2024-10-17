@@ -1,0 +1,83 @@
+body {
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding: 20px;
+    text-align: center;
+}
+
+fieldset {
+    display: flow;
+    justify-content: left;
+    width: 55%;
+    margin: auto;
+    padding-top: 10px;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.fieldset_bg {
+    border: 5px solid #680810;
+    background-color: rgb(231, 227, 227);
+}
+
+fieldset legend {
+    text-align: left;
+    padding: 10px;
+    font-size: large;
+    font-weight: bold;
+    background-color: #5a5aaa;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.text_style {
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    text-align: left;
+}
+
+textarea {
+    width: 80%;
+    height: 35px;
+    padding: 10px;
+    font-size: large;
+}
+
+fieldset.fieldset_bg  div {
+    padding: 10px;
+}
+
+fieldset div input {
+    padding: 5px;
+    font-size: medium;
+    font-style: italic;
+}
+
+select {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.button_align {
+    text-align: center;
+}
+
+.button_align button {
+    font-size: medium;
+    font-weight: bold;
+    background-color: rgb(231, 227, 227);
+    border: #680810 solid 3px;
+    width: 15%;
+    margin: 15px;
+    padding: 5px;
+}
