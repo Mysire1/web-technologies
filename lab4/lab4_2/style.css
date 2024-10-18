@@ -2,6 +2,7 @@ td,th{
     text-align: center;
     padding: 25px 25px;
 }
+
 table{
     border-collapse: separate;
     table-layout: fixed;
@@ -9,25 +10,26 @@ table{
 }
 thead > tr{
     background: linear-gradient(to right,
-    #d4cef5 20%,
-    #c8c0f8 20%, #c8c0f8 40%,
-    #b5a9fd 40%, #b5a9fd 60%,
-    #907ff2 60%, #907ff2 80%,
-    #735bf9 80%, #735bf9 100%);
+    #e18f8f 20%,
+    #d77171 20%, #d75959 40%,
+    #d74e4e 40%, #ce3e3e 60%,
+    #d24141 60%, #d92525 80%,
+    #d21515 80%, #de0606 100%);
 }
 
 tbody > tr > th{
     background: linear-gradient(to right,
-    #4324f2,
-    #4324f2
+    #de0606,
+    #de0606
     );
 }
+
 tbody {
     background: repeating-linear-gradient(
             to bottom,
-            #5744bd 20%,
-            #5744bd 40%,
-            #5a5aaa 40%,
-            #5a5aaa 60%
+            #ce3e3e 20%,
+            #ce3e3e 40%,
+            #d21515 40%,
+            #d21515 60%
     );
 }
