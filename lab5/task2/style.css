@@ -1,0 +1,152 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header {
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    background-color: #de2020;
+    border-radius: 0 0 40px 40px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 3px 5px 2px;
+    width: 100%;
+}
+
+.logo{
+    display: inline-block;
+    padding: 15px;
+}
+
+.logo > img {
+    width: 80px;
+}
+
+.header_ul {
+    float: right;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    list-style: none;
+}
+
+.header_ul > li {
+    margin-right: 25px;
+    float: left;
+}
+
+.header_ul > li > a{
+    display: inline-block;
+    padding: 20px;
+    background-color: #7ea434;
+
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: larger;
+}
+
+
+main{
+    align-items: center;
+}
+
+.wrapper{
+    width: 1140px;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.border {
+    display: inline-block;
+    width: 300px;
+    padding: 0px;
+    margin: 50px 0px;
+    vertical-align: top;
+}
+
+.border-1 {
+    border: 5px, solid, #de2020;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.border-2 {
+    border: 5px, solid, #de2020;
+    border-radius: 80px 0px;
+    padding: 5px;
+}
+
+.border-3 {
+    border: 5px, solid, #de2020;
+    border-radius: 60px 150px;
+    padding: 5px;
+}
+
+.border-4 {
+    border: 25px solid;
+    border-color: #de2020 #800404;
+    border-radius: 100px / 40px;
+    padding: 5px;
+}
+
+.border-5 {
+    border: 25px solid;
+    border-color: #b73c3c #de2020 #ff0000;
+    border-radius: 60% 8% / 30% 8%;
+    padding: 5px;
+}
+
+.border-6 {
+    border: 25px solid;
+    border-color: #934e4e #ad4040 #c51616 #ff0000;
+    border-radius: 0% 0% 100% 0%;
+    padding: 5px;
+}
+
+.border-7 {
+    border: double #de2020 20px;
+    border-image: url("../icons/border.png") 30;
+    padding: 5px;
+}
+.border-8 {
+    border: double #de2020 20px;
+    border-image: url("../icons/border.png") 20 / 20px round;
+    padding: 5px;
+}
+.border-9 {
+    border: double #de2020 20px;
+    border-image: url("../icons/border.png") 42 / 20px round;
+    padding: 5px;
+}
+.border-10 {
+    border: double #de2020 20px;
+    border-image: url("../icons/border.png") 16 12 / 20px stretch;
+    padding: 10px;
+    margin-right: 25px;
+}
+.border-11 {
+    border: double #de2020 15px;
+    border-image: url("../icons/border.png") 9 25 / 20px round;
+    padding: 10px;
+    margin-right: 25px;
+}
+.border-12 {
+    border: double #de2020 20px;
+    border-image: url("../icons/border.png") 6 15 / 18px stretch;
+    padding: 10px;
+}

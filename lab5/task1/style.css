@@ -1,0 +1,101 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header {
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    background-color: #de2020;
+    border-radius: 0 0 40px 40px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 3px 5px 2px;
+    width: 100%;
+}
+
+.logo{
+    display: inline-block;
+    padding: 15px;
+}
+
+.logo > img {
+    width: 80px;
+}
+
+.header_ul {
+    float: right;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    list-style: none;
+}
+
+.header_ul > li {
+    margin-right: 25px;
+    float: left;
+}
+
+.header_ul > li > a{
+    display: inline-block;
+    padding: 20px;
+    background-color: #7ea434;
+
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: larger;
+}
+
+.header-div {
+    width: 100%;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 1140px;
+    margin: 100px 50px;
+    display: inline-block;
+    text-align: justify;
+    position: relative;
+}
+
+.column {
+    column-count: 3;
+    column-gap: 35px;
+    column-rule: 5px dashed red;
+    column-width: 100px;
+}
+
+main img.right {
+    width: 200px;
+    float: right;
+    margin: 20px;
+    margin-right: 0;
+}
+
+main img.left {
+    width: 200px;
+    float: left;
+    margin: 20px;
+    margin-left: 0;
+}
